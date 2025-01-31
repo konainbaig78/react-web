@@ -5,6 +5,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/images/LOGO.png'
 import group from '../assets/images/Group 11 1.png'
+import '../App.css'
+import '../index.css'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -20,7 +22,7 @@ export default function Navbar() {
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" className="flex font-pri items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -47,7 +49,7 @@ export default function Navbar() {
           key={item.name}
           href={item.href}
           onClick={() => setActive(item.name)}
-          className={`text-sm font-semibold transition duration-300 ${
+          className={`text-sm font-semibold transition duration-300 ease-in-out ${
             active === item.name ? "text-[#5E3BEE] text-500 font-bold" : "text-gray-500"
           }`}
         >
@@ -56,7 +58,7 @@ export default function Navbar() {
       ))}
     </div>
           <div className=" hidden lg:flex align-middle lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-[#5E3BEE]  flex items-center justify-center text-center border-[#5E3BEE] border-1 w-[109px] h-[43px] bg-white">
+            <a href="#" className="text-sm/6 font-semibold text-[#5E3BEE]  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110   font-pri flex items-center justify-center text-center border-[#5E3BEE] border-1 w-[109px] h-[43px] bg-white hover:bg-[#5E3BEE] hover:text-white ">
 
              Contact me 
             </a>
@@ -90,7 +92,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block font-pri rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -99,7 +101,7 @@ export default function Navbar() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block font-pri rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Log in
                   </a>
@@ -127,20 +129,20 @@ export default function Navbar() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           
           <div className=" ">
-          <div className="relative text-[21px]  leading-[32px] font-semibold text-[#282938] text-left text-sm/6 text-[#282938] ">
+          <div className="relative text-[21px] font-pri leading-[32px] font-semibold text-[#282938] text-left text-sm/6 text-[#282938] ">
             Hey, I am John
             </div>
-            <span className=" !text-[61px] leading-[75px] font-bold tracking-tight text-balance text-gray-900 sm:text-7xl">
-            I create <span className='text-[#5E3BEE]'>product design</span> and brand experience
+            <span className=" !text-[61px] leading-[75px] font-pri font-bold tracking-tight text-balance text-gray-900 sm:text-7xl">
+            I create <span className='text-[#5E3BEE] font-pri '>product design</span> and brand experience
             </span>
-            <p className="mt-8 leading-[38px] !text-[23px] font-normal text-pretty text-gray-500 sm:text-xl/8">
+            <p className="mt-8 leading-[38px] font-pri !text-[23px] font-normal text-pretty text-gray-500 sm:text-xl/8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
             </p>
             <div className="mt-10 flex items-center  gap-x-6">
               <a
                 href="#"
-                className="rounded-[5.3px] bg-[#5E3BEE] text-[16px]
- px-3.5 py-2.5 text-sm font-light text-white shadow-xs  w-[124px] h-[46px] flex items-center justify-center"
+                className="rounded-[5.3px] font-pri bg-[#5E3BEE] text-[16px]
+ px-3.5 py-2.5 text-sm font-light text-white shadow-xs duration-300 ease-out hover:text-[#5E3BEE] hover:border-[#5E3BEE] hover:border-1 hover:bg-transparent  w-[124px] h-[46px] flex items-center justify-center  "
               >
                 Get In Touch
               </a>

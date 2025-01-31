@@ -1,10 +1,17 @@
 import React from 'react'
 import Navbar from './components/Header'
-
+import Skills  from './components/Skills'
+import AboutMe from './components/AboutMe'
 
 const App = () => {
   return (
-   <Navbar/>
+<div>
+
+  <Navbar/>
+   <Skills/>
+   <AboutMe/>
+
+   </div>
   )
 }
 
