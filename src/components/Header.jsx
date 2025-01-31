@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="absolute bg-white   h-[80px] inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex font-pri items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -49,7 +49,7 @@ export default function Navbar() {
           key={item.name}
           href={item.href}
           onClick={() => setActive(item.name)}
-          className={`text-sm font-semibold transition duration-300 ease-in-out ${
+          className={`text-sm font-semibold text-[16px] transition duration-300 ease-in-out ${
             active === item.name ? "text-[#5E3BEE] text-500 font-bold" : "text-gray-500"
           }`}
         >
